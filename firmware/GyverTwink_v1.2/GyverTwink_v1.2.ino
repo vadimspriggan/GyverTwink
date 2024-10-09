@@ -49,7 +49,8 @@ WiFiUDP udp;
 EEManager EEwifi(portalCfg);
 CRGB leds[LED_MAX];
 CLEDController *strip;
-EncButton<EB_TICK, BTN_PIN> btn;
+EncButton btn(BTN_PIN);
+
 IPAddress myIP;
 
 // ================== EEPROM BLOCKS ==================
