@@ -28,7 +28,7 @@ bool checkButton() {
   uint32_t tmr = millis();
   while (millis() - tmr < 2000) {
     btn.tick();
-    if (btn.state()) return true;
+    if (btn.click()) return true;
   }
   return false;
 }
